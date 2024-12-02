@@ -1,0 +1,17 @@
+stages:
+  preprocess:
+    cmd: ' '
+    deps:
+    - data/raw/data.csv
+    - src/preprocess.py
+    params:
+    - preprocess.input
+    - preprocess.output
+    outs:
+    - data/processed/data.csv
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+    - data/raw/data.csv
+    - models/model.pkl
+    - src/evaluate.py
