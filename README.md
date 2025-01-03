@@ -8,7 +8,7 @@ This project demonstrates how to build an end-to-end machine learning pipeline u
 
 - DVC is used to track and version the dataset, models, and pipeline stages, ensuring reproducibility across different environments.
 - The pipeline is structured into stages (preprocessing, training, evaluation) that can be automatically re-executed if any dependencies change (e.g., data, scripts, or parameters).
-- DVC also allows remote data storage (e.g., DagsHub, S3) for large datasets and models.
+- DVC also allows remote data storage (e.g., DagsHub) for large datasets and models.
 
 **Experiment Tracking with MLflow:**
 
